@@ -6,4 +6,9 @@ Each folder contains code, notebooks and mini-projects aligned with the roadmap�
 ---
 
 ## 📂 Repository Structure
+| Module                   | Status         | Last Updated |
+| ------------------------ | -------------- | ------------ |
+| 01 Language Fundamentals | ✅ completed   | 2025-08-05   |
+| 02 Data Structures       | 🟣 pending     | YYYY-MM-DD   |
+
 
