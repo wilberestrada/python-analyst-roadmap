@@ -27,6 +27,16 @@ for index,fruit in enumerate(fruits):
 # using zip()
 stock = [10, 8, 5]
 zipped = list(zip(fruits, stock))
-print(zipped)
+for prod, qty in zipped:
+    print(f"{prod}: {qty}")
+
+print("\nEnumerate example:")
+for idx, fruit in enumerate(fruits, start=1):
+    print(f"{idx}. {fruit}")
+
+# comprehension: dict mapping fruit to length
+fruit_lengths = {fruit: len(fruit) for fruit in fruits}
+print("\nFruit lengths:", fruit_lengths)
+
 
 
