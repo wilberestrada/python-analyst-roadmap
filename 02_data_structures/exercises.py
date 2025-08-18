@@ -54,3 +54,20 @@ print(price_map)
 premium = {prod for prod, price in zip(products, prices) if price > 2.0}
 print(premium)
 
+# 1) Aplanar y sumar
+matrix = [[1,2,3], [4,5], [6]]
+flat = [x for row in matrix for x in row]
+print("Flat:", flat)
+print("Sum:", sum(flat))
+
+# 2) Generator vs list comp (memoria)
+even_squares_gen = (x*x for x in range(1_000_000) if x % 2 == 0)
+first_5 = [next(even_squares_gen) for _ in range(5)]
+print("First 5 even squares (generator):", first_5)
+
+# 3) Dict comprehension con filtro
+products = ["apple", "banana", "orange", "blueberries"]
+prices   = [1.2, 0.5, 0.8, 3.2]
+long_names_price = {p: pr for p, pr in zip(products, prices) if len(p) > 5}
+print("Long names price map:", long_names_price)
+
