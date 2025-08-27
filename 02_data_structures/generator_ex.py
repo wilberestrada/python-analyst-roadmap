@@ -24,14 +24,12 @@ for value in gen:
 
 # ex3
 def fibonacci_generator(n):
-    a = 0 # value 1 by Fibonacci number
-    b = 1 # value 2 by Fibonacci number
+    a, b = 0, 1 # values by Fibonacci numbers
     count = 0 # counter
 
     while count < n:
         yield a # Produce sequence currect number
-        a = b
-        b = a + b # Calculate the next Fibonacci number
+        a, b = b, a + b  # Calculate the next Fibonacci number
         count += 1
 
 fib_sequence = list(fibonacci_generator(10))
