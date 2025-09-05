@@ -9,6 +9,7 @@ Each folder contains code, notebooks and mini-projects aligned with the roadmap�
 | Module                   | Status         | Last Updated |
 | ------------------------ | -------------- | ------------ |
 | 01 Language Fundamentals | ✅ completed   | 2025-08-05   |
-| 02 Data Structures       | 🟣 pending     | YYYY-MM-DD   |
+| 02 Data Structures       | ✅ completed   | 2025-09-30   |
+| 03 File Handling         | ✅ completed   | 2025-09-04   |
 
 
