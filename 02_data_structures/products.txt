@@ -1,0 +1,8 @@
+Apple - 1.2
+Banana - 0.5
+Orange - 0.8
+Mango - 1.5
+Watermelon - 3.0
+Grapes - 2.2
+Pineapple - 2.5
+Blueberries - 3.2
