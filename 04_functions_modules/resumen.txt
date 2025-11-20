@@ -1,0 +1,3 @@
+ProductoA: 13
+ProductoB: 12
+ProductoC: 8
