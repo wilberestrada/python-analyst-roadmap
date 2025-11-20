@@ -1,4 +1,4 @@
 File Handling
 1. open git console
-2. go to the folder 02_data_structures/
-3. execute python any_file.py
+2. go to the folder 03_file_handling/
+3. execute python sales_summary_csv.py
