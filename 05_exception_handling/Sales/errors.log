@@ -1,0 +1,4 @@
+Line 2: invalid amount -> 'ProductoB,cinco'
+Line 4: incorrect format -> 'ProductoA'
+Line 5: empty product -> ',4'
+Line 6: negative amount -> 'ProductoZ,-3'

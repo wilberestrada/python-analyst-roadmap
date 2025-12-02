@@ -1,0 +1,7 @@
+ProductoA,10
+ProductoB,cinco
+ProductoC,8
+ProductoA
+,4
+ProductoZ,-3
+ProductoB,7
