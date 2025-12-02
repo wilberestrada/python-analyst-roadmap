@@ -1,0 +1,5 @@
+Line 2: invalid age -> 'Luis,treinta,luis@example'
+Line 3: empty name -> ',40,maria@example.com'
+Line 4: invalid email -> 'Pedro,22,'
+Line 5: invalid age -> 'Juan,-5,juan@example.com'
+Line 7: invalid email -> 'Carlos,21,carlos.com'

@@ -1,0 +1,7 @@
+Ana,25,ana@example.com
+Luis,treinta,luis@example
+,40,maria@example.com
+Pedro,22,
+Juan,-5,juan@example.com
+Julia,30,julia@example.com
+Carlos,21,carlos.com
