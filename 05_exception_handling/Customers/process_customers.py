@@ -21,7 +21,7 @@ def main():
 
             # Separate values
             try:
-                name, age_str, emai = line.split(",")
+                name, age_str, email = line.split(",")
             except ValueError:
                 log.write(f"Line {num_line}: incorrect format -> {line!r}\n")
                 continue
@@ -46,20 +46,20 @@ def main():
                 continue
 
             # Validate email
-            email = emai.strip()
+            email = email.strip()
             try:
-                validate = validate_email(emai,check_deliverability=False)
-                email_vali = validate.email
+                validate = validate_email(email,check_deliverability=False)
+                email_validated = validate.email
             except ValueError:
                 log.write(f"Line {num_line}: invalid email -> {line!r}\n")
                 continue
 
             # Acumulate
-            valid_customers.append((name, age, email_vali))
+            valid_customers.append((name, age, email_validated))
 
     with output_path.open("w", encoding="utf-8") as out:
-        for name, age, email_vali in sorted(valid_customers):
-            out.write(f"{name},{age},{email_vali}\n")
+        for name, age, email_validated in sorted(valid_customers):
+            out.write(f"{name},{age},{email_validated}\n")
             
     print("Clientes procesados.")
 
