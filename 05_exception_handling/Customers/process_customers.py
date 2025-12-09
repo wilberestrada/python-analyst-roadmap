@@ -21,19 +21,19 @@ def main():
 
             # Separate values
             try:
-                name, age_str, email = line.split(",")
+                name_raw, age_raw, email_raw = line.split(",")
             except ValueError:
                 log.write(f"Line {num_line}: incorrect format -> {line!r}\n")
                 continue
 
             # Validate name
-            name = name.strip()
+            name = name_raw.strip()
             if not name:
                 log.write(f"Line {num_line}: empty name -> {line!r}\n")
                 continue
 
             # Validate age
-            age_str = age_str.strip()
+            age_str = age_raw.strip()
             try:
                 age = int(age_str)
             except ValueError:
@@ -42,15 +42,15 @@ def main():
 
             # Validate negative age
             if age < 0:
-                log.write(f"Line {num_line}: invalid age -> {line!r}\n")
+                log.write(f"Line {num_line}: negative number -> {line!r}\n")
                 continue
 
             # Validate email
-            email = email.strip()
+            email = email_raw.strip()
             try:
                 validate = validate_email(email,check_deliverability=False)
                 email_validated = validate.email
-            except ValueError:
+            except EmailNotValidError:
                 log.write(f"Line {num_line}: invalid email -> {line!r}\n")
                 continue
 
