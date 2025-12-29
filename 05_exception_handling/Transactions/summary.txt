@@ -1,0 +1,4 @@
+Total valid transactions: 3
+Total invalid transactions: 7
+Total processed lines: 10
+Final balance: 280.5

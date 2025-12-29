@@ -1,0 +1,7 @@
+Line 3: incorrect amount -> '2025-01-07,deposit,abc'
+Line 4: incorrect date -> '2025-13-01,deposit,50'
+Line 5: negative amount or equal to zero -> '2025-01-09,transfer,-30'
+Line 6: negative amount or equal to zero -> '2025-01-10,withdraw,-10'
+Line 8: invalid transaction type -> '2025-01-12,other,50'
+Line 9: incorrect date -> ',deposit,40'
+Line 10: negative amount or equal to zero -> '2025-01-13,deposit,0'
